@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: white;
+    gap: 0; 
+}
+
+#line1, #line2, #line3, #line4 {
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+section {
+    margin: 0 8px; 
+    padding: 0; 
+}
+
+h3 {
+    margin: 0; 
+    padding: 0; 
+    font-size: 60px;
+    font-style: italic;
+}
+
+#fadeIn1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+#fadeIn2 {
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 1s forwards; 
+}
+
+#fadeIn3 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards; 
+}
+
+#fadeIn4 {
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 3s forwards; 
+}
+
+#fadeIn5 {
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 4s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.color {
+    background: linear-gradient(to right, #f32170, #ff6b08, green, blue, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nature {
+    color: green;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0); 
+    }
+    to {
+        transform: translateX(100px); 
+    }
+}
+
+.lead {
+    color: lightpink;
+    text-shadow: 0 0 10px lightpink, 0 0 20px lightpink, 0 0 30px pink, 0 0 40px hotpink, 0 0 50px hotpink;
+}
+
+.lead:hover {
+    display: inline-block; 
+    animation: moveRight 2s ease-in-out forwards; 
+    text-shadow: 0 0 15px lightpink, 0 0 30px pink, 0 0 45px hotpink, 0 0 60px deeppink; 
+}
+
+.blue {
+    color: blue;
+}
+
+@keyframes sway {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-5px) translateY(2px); 
+    }
+    50% {
+        transform: translateX(0) translateY(5px); 
+    }
+    75% {
+        transform: translateX(5px) translateY(2px); 
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.oceans {
+    display: inline-block;
+    animation: sway 3s ease-in-out infinite;
+}
+
+.vibrant:hover {
+    display: inline-block; 
+    animation: fadeIn 2s ease-in-out forwards;
+    text-shadow: 0 0 15px lightblue, 0 0 30px deepskyblue, 0 0 45px dodgerblue, 0 0 60px lightskyblue; 
+}
+
+a {
+    text-decoration: none;
+    color: #f32170;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}

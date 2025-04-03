@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: white;
+    gap: 0; 
+}
+
+#line1, #line2, #line3 {
+    flex-basis: 100%; 
+    display: flex;
+    justify-content: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+section {
+    margin: 0 8px; 
+    padding: 0; 
+}
+
+h3 {
+    margin: 0; 
+    padding: 0; 
+    font-size: 60px;
+    font-style: italic;
+}
+
+#fadeIn1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+#fadeIn2 {
+    opacity: 0; 
+    animation: fadeIn 2s ease-in-out 1s forwards; 
+}
+
+#fadeIn3 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.floats {
+    display: inline-block; 
+    animation: floatUp 3s ease-in-out infinite; 
+    color: lightblue; 
+}
+
+@keyframes moveTopLeft {
+    0% {
+        transform: translate(0, 0); 
+    }
+    100% {
+        transform: translate(-50px, -50px); 
+    }
+}
+
+.topLeft:hover {
+    display: inline-block; 
+    animation: moveTopLeft 3s ease-in-out forwards; 
+    color: lightgreen; 
+}
+
+@keyframes moveTopRight {
+    0% {
+        transform: translate(0, 0); 
+    }
+    100% {
+        transform: translate(50px, -50px); 
+    }
+}
+
+.topRight:hover {
+    display: inline-block; 
+    animation: moveTopRight 3s ease-in-out forwards; 
+    color: lightcoral; 
+}
+
+.hate {
+    color: red; 
+    text-shadow: 0 0 10px red, 0 0 20px darkred, 0 0 30px crimson; 
+}
+
+.hate:hover{
+    display: inline-block; 
+    animation: fadeIn 2s ease-in-out forwards; 
+    text-shadow: 0 0 15px red, 0 0 30px darkred, 0 0 45px crimson, 0 0 60px firebrick; /* Enhanced shadow on hover */
+    color: darkred; 
+}
+
+.race {
+    color: brown;
+}
+
+.color {
+    color: orange; 
+    text-shadow: 0 0 10px orange, 0 0 20px darkorange, 0 0 30px gold; 
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0); 
+    }
+    100% {
+        transform: translateY(-50px); 
+    }
+}
+
+.scales:hover {
+    display: inline-block; 
+    animation: moveUp 2s ease-in-out forwards; 
+    color: lightyellow; 
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0); 
+    }
+    100% {
+        transform: translateY(50px); 
+    }
+}
+
+.weigh {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+.weigh:hover {
+    display: inline-block; 
+    animation: moveDown 2s ease-in-out forwards; 
+    color: lightseagreen; 
+}
