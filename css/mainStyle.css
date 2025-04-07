@@ -11,6 +11,13 @@ body {
     text-align: center;
 }
 
+#subtitle {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+}
+
 #fadeIn {
     animation: fadeIn 2s ease-in-out;
 }
